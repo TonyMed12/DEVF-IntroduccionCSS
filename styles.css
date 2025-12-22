@@ -29,3 +29,18 @@ p {
     margin: 20px;
     color: white
 }
+
+#sobremmi {
+    padding-top: 30px;
+    border-radius: 10px;
+    margin: 20px;
+    color: white
+}
+
+#imagen {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid whitesmoke;
+}
