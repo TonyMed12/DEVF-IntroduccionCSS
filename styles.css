@@ -22,7 +22,7 @@ p {
     font-weight: bold;
 }
 
-#proyectos {
+.lista {
     background-color: navy;
     padding: 20px;
     border-radius: 10px;
@@ -43,4 +43,27 @@ p {
     height: 200px;
     object-fit: cover;
     border: 5px solid whitesmoke;
+}
+
+.section {
+    background-color: #001f4d;
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px solid lightblue;
+    border-radius: 10px;
+    max-width: 700px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+section {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
