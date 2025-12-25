@@ -1,18 +1,18 @@
+/* ===== ESTILOS GENERALES ===== */
+
 body {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
     background-color: darkblue;
+    color: whitesmoke;
     text-align: center;
+    margin: 0;
 }
 
 h1 {
-    color: whitesmoke;
-    text-align: center;
     font-weight: bold;
 }
 
 h2 {
-    color: whitesmoke;
-    text-align: center;
     font-style: italic;
 }
 
@@ -22,22 +22,33 @@ p {
     font-weight: bold;
 }
 
-.lista {
-    background-color: navy;
+
+.card {
+    background-color: #001f4d;
     padding: 20px;
+    margin: 20px auto;
+    border: 2px solid lightblue;
     border-radius: 10px;
-    margin: 20px;
-    color: white
+    max-width: 700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-#sobremmi {
-    padding-top: 30px;
+
+.lista {
+    list-style: none;
+    padding: 0;
+    background-color: navy;
     border-radius: 10px;
-    margin: 20px;
-    color: white
 }
+
+.lista li {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
 
 #imagen {
+    margin-top: 15px;
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -45,25 +56,24 @@ p {
     border: 5px solid whitesmoke;
 }
 
-.section {
-    background-color: #001f4d;
-    padding: 20px;
-    margin: 20px auto;
-    border: 2px solid lightblue;
-    border-radius: 10px;
-    max-width: 700px;
+.perfil {
+    color: #dbe4ff;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+/* span hereda */
+.perfil .nota {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: inherit;
 }
 
-li {
-    margin: 10px 0;
-    font-weight: bold;
-}
-
-section {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+/* Romper herencia  */
+.perfil .detalle {
+    margin-top: 12px;
+    color: #9aa7ff;
+    font-weight: normal;
+    font-size: 0.9rem;
 }
