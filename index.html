@@ -10,50 +10,49 @@
 
 <body>
 
+    <!-- HERO -->
     <header class="hero">
         <h1>TonyMedDev</h1>
         <p class="subtitle">Dev en formación</p>
     </header>
 
-    <main>
+    <main class="container">
 
         <!-- SOBRE MI -->
-        <section class="card">
-            <h2>Sobre mí</h2>
-            <p>
-                Soy José Antonio Medina Ayala, estudiante de 8vo semestre de Ingeniería en
-                Sistemas Computacionales en el Instituto Tecnológico de Morelia.
-            </p>
-            <p>
-                Me enfoco en desarrollo web, buenas prácticas y construcción de soluciones
-                tecnológicas funcionales.
-            </p>
-            <img src="image.png" alt="Foto de perfil" class="avatar">
+        <section class="card perfil-flex">
+            <div class="perfil-texto">
+                <h2>Sobre mí</h2>
+                <p>
+                    Soy José Antonio Medina Ayala, estudiante de 8vo semestre de Ingeniería en
+                    Sistemas Computacionales en el Instituto Tecnológico de Morelia.
+                </p>
+                <p>
+                    Me enfoco en desarrollo web, buenas prácticas y construcción de soluciones
+                    tecnológicas funcionales.
+                </p>
+            </div>
+
+            <div class="perfil-imagen">
+                <img src="image.png" alt="Foto de perfil" id="imagen">
+            </div>
         </section>
 
         <!-- PROYECTOS -->
         <section class="card">
             <h2>Proyectos</h2>
-            <ul class="projects">
-                <li>
-                    <strong>Biblioteca Digital CBTis 147</strong>
-                    <span>Sistema web para gestión de recursos educativos</span>
-                </li>
-                <li>
-                    <strong>Centro de Atención Animal</strong>
-                    <span>Plataforma de apoyo para adopciones y gestión</span>
-                </li>
-                <li>
-                    <strong>ProjeXus</strong>
-                    <span>Gestión de concursos de proyectos académicos</span>
-                </li>
-            </ul>
+
+            <div class="proyectos-flex">
+                <div class="proyecto">Biblioteca Digital CBTis 147</div>
+                <div class="proyecto">Centro de Atención Animal – Morelia</div>
+                <div class="proyecto">ProjeXus – Gestión de Concursos</div>
+            </div>
         </section>
 
         <!-- TECNOLOGÍAS -->
         <section class="card">
             <h2>Tecnologías</h2>
-            <div class="tech">
+
+            <div class="tecnologias-flex">
                 <span>HTML5</span>
                 <span>CSS3</span>
                 <span>JavaScript</span>
@@ -63,30 +62,6 @@
                 <span>SQL</span>
             </div>
         </section>
-
-        <!-- HERENCIA -->
-        <section class="card perfil">
-            <h2>Perfil Profesional</h2>
-
-            <p>
-                Me caracterizo por mantener una base sólida en buenas prácticas de desarrollo,
-                escritura de código limpio y comprensión de fundamentos como HTML y CSS.
-            </p>
-
-            <p>
-                Busco crear interfaces claras, mantenibles y escalables, cuidando tanto
-                la estructura como la presentación visual.
-            </p>
-
-            <span class="nota">
-                Actualmente continúo fortaleciendo mis habilidades en frontend moderno.
-            </span>
-
-            <p class="detalle">
-                Este texto representa una excepción visual dentro de la sección.
-            </p>
-        </section>
-
 
     </main>
 
