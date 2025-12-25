@@ -122,3 +122,48 @@ footer {
         text-align: center;
     }
 }
+
+.formacion-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.formacion-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #001a80;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.formacion-icono {
+    font-size: 2rem;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formacion-texto {
+    text-align: left;
+}
+
+.formacion-texto h3 {
+    margin: 0 0 5px;
+    font-style: normal;
+}
+
+.formacion-texto p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: lightblue;
+}
+
+.formacion-item.destacado {
+    align-self: center;
+    /* romper alineación */
+    background-color: #0033cc;
+}
