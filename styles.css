@@ -167,3 +167,72 @@ footer {
     /* romper alineación */
     background-color: #0033cc;
 }
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(0, 26, 128, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #cfe2ff;
+}
+
+.nav-links li:hover {
+    color: white;
+}
+
+.formacion-item {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: gold;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.btn-contacto {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #0033cc;
+    color: white;
+    padding: 15px 18px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.btn-contacto:hover {
+    background-color: #0055ff;
+}
