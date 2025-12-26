@@ -9,25 +9,28 @@
 </head>
 
 <body>
+
+    <!-- NAVBAR -->
     <nav class="navbar">
         <span class="logo">TonyMedDev</span>
         <ul class="nav-links">
-            <li>Sobre mí</li>
-            <li>Proyectos</li>
-            <li>Certificaciones</li>
-            <li>Tecnologías</li>
+            <li><a href="#sobre">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#formacion">Formación</a></li>
+            <li><a href="#tecnologias">Tecnologías</a></li>
         </ul>
     </nav>
 
+    <!-- HERO -->
     <header class="hero">
         <h1>TonyMedDev</h1>
-        <p class="subtitle">Desarrollador Web</p>
+        <p class="subtitle">Desarrollador Web en formación</p>
     </header>
 
     <main class="container">
 
         <!-- SOBRE MI -->
-        <section class="card perfil-flex">
+        <section id="sobre" class="card perfil-flex">
             <div class="perfil-texto">
                 <h2>Sobre mí</h2>
                 <p>
@@ -46,7 +49,7 @@
         </section>
 
         <!-- PROYECTOS -->
-        <section class="card">
+        <section id="proyectos" class="card">
             <h2>Proyectos</h2>
 
             <div class="proyectos-flex">
@@ -55,9 +58,48 @@
                 <div class="proyecto">ProjeXus – Gestión de Concursos</div>
             </div>
         </section>
+        <section id="experiencia" class="card">
+            <h2>Experiencia y Roles</h2>
 
+            <div class="experiencia-flex">
+
+                <!-- CAAM -->
+                <div class="experiencia-item">
+                    <div class="experiencia-header">
+                        <h3>Centro de Atención Animal de Morelia (CAAM)</h3>
+                        <span class="experiencia-fecha">2025</span>
+                    </div>
+
+                    <p class="experiencia-rol">Desarrollador Full Stack</p>
+
+                    <p class="experiencia-desc">
+                        Proyecto académico enfocado en el desarrollo de un sistema web para la gestión
+                        del Centro de Atención Animal. Participé en todo el ciclo de desarrollo,
+                        incluyendo frontend, backend, buenas prácticas de código, uso de Docker
+                        y despliegue en AWS, con mayor enfoque en la parte frontend.
+                    </p>
+                </div>
+
+                <!-- PROJEXUS -->
+                <div class="experiencia-item">
+                    <div class="experiencia-header">
+                        <h3>ProjeXus – Gestión de Concursos</h3>
+                        <span class="experiencia-fecha">2025</span>
+                    </div>
+
+                    <p class="experiencia-rol">Scrum Master & Desarrollador Full Stack</p>
+
+                    <p class="experiencia-desc">
+                        Sistema académico para el seguimiento y gestión de concursos de convocatorias.
+                        Desempeñé el rol de Scrum Master coordinando el trabajo en equipo,
+                        además de participar activamente en el desarrollo completo del sistema.
+                    </p>
+                </div>
+
+            </div>
+        </section>
         <!-- TECNOLOGÍAS -->
-        <section class="card">
+        <section id="tecnologias" class="card">
             <h2>Tecnologías</h2>
 
             <div class="tecnologias-flex">
@@ -70,8 +112,9 @@
                 <span>SQL</span>
             </div>
         </section>
+
         <!-- FORMACIÓN Y CERTIFICACIONES -->
-        <section class="card">
+        <section id="formacion" class="card">
             <h2>Formación y Certificaciones</h2>
 
             <div class="formacion-flex">
@@ -81,30 +124,28 @@
                     <div class="formacion-texto">
                         <h3>Programa Delfín</h3>
                         <p>
-                            Participación en Barranquilla, Colombia en certificaciones con enfoque en investigación
-                            académica y desarrollo de un artículo de Seguridad de la Información.
+                            Participación en Barranquilla, Colombia con enfoque en investigación
+                            académica y desarrollo de un artículo sobre Seguridad de la Información.
                         </p>
                     </div>
                 </div>
 
                 <div class="formacion-item destacado">
                     <span class="badge">Certificación</span>
-
                     <div class="formacion-icono">📜</div>
                     <div class="formacion-texto">
                         <h3>Google Project Management</h3>
                         <p>
-                            Certificación profesional de Google en Coursera enfocada en
-                            gestión de proyectos, metodologías ágiles y liderazgo.
+                            Certificación profesional de Google en Coursera enfocada en gestión
+                            de proyectos, metodologías ágiles y liderazgo.
                         </p>
                     </div>
                 </div>
 
-
                 <div class="formacion-item">
                     <div class="formacion-icono">💻</div>
                     <div class="formacion-texto">
-                        <h3>DEV.F - Desarrollo Web</h3>
+                        <h3>DEV.F – Desarrollo Web</h3>
                         <p>
                             Formación práctica en HTML, CSS y fundamentos de frontend,
                             aplicados en proyectos reales.
@@ -115,13 +156,16 @@
             </div>
         </section>
 
-
     </main>
 
+    <!-- FOOTER -->
     <footer>
         <p>© 2025 TonyMedDev</p>
+        <p>Proyecto Final – Módulo CSS</p>
     </footer>
-    <a href="#" class="btn-contacto"> 📒 Contacto</a>
+
+    <!-- BOTÓN CONTACTO -->
+    <a href="#" class="btn-contacto">📒 Contacto</a>
 
 </body>
 

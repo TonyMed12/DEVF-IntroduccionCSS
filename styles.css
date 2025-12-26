@@ -1,9 +1,48 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
     background: linear-gradient(135deg, #020024, #020b6d, #000c9a);
     color: whitesmoke;
-    text-align: center;
     margin: 0;
+    text-align: center;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(0, 26, 128, 0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #cfe2ff;
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+    color: white;
 }
 
 .hero {
@@ -18,7 +57,6 @@ body {
 .subtitle {
     font-size: 1.2rem;
     color: #a6c8ff;
-    letter-spacing: 1px;
 }
 
 .container {
@@ -31,8 +69,14 @@ body {
     background-color: rgba(0, 31, 77, 0.85);
     border-radius: 20px;
     padding: 30px;
-    margin: 40px 0;
+    margin: 50px 0;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.45);
+}
+
+h2 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #4d6cff;
+    padding-bottom: 5px;
 }
 
 .perfil-flex {
@@ -80,7 +124,6 @@ body {
     border-radius: 12px;
     font-weight: bold;
     min-width: 220px;
-    text-align: center;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -102,80 +145,11 @@ body {
     border-radius: 999px;
     font-weight: bold;
     font-size: 0.85rem;
-    transition: background-color 0.3s ease;
 }
 
 .tecnologias-flex span:hover {
     background-color: #0033cc;
 }
-
-footer {
-    margin-top: 60px;
-    padding: 20px;
-    font-size: 0.9rem;
-    color: #a6c8ff;
-}
-
-@media (max-width: 768px) {
-    .perfil-flex {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .perfil-texto p {
-        max-width: 100%;
-    }
-
-    .navbar {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .proyectos-flex {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .proyecto {
-        width: 100%;
-        max-width: 320px;
-    }
-
-    .tecnologias-flex {
-        justify-content: center;
-    }
-
-    .tecnologias-flex span {
-        font-size: 0.8rem;
-        padding: 8px 14px;
-    }
-
-    .hero h1 {
-        font-size: 2.2rem;
-    }
-
-    .subtitle {
-        font-size: 1rem;
-    }
-
-    h2 {
-        font-size: 1.4rem;
-    }
-
-    .btn-contacto {
-        padding: 12px 14px;
-        font-size: 0.85rem;
-        bottom: 15px;
-        right: 15px;
-    }
-}
-
 
 .formacion-flex {
     display: flex;
@@ -185,6 +159,7 @@ footer {
 }
 
 .formacion-item {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -198,16 +173,10 @@ footer {
     width: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .formacion-texto {
     text-align: left;
-}
-
-.formacion-texto h3 {
-    margin: 0 0 5px;
-    font-style: normal;
 }
 
 .formacion-texto p {
@@ -218,47 +187,7 @@ footer {
 
 .formacion-item.destacado {
     align-self: center;
-    /* romper alineación */
     background-color: #0033cc;
-}
-
-.navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: rgba(0, 26, 128, 0.95);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-}
-
-.logo {
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-.nav-links {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li {
-    cursor: pointer;
-    font-size: 0.9rem;
-    color: #cfe2ff;
-}
-
-.nav-links li:hover {
-    color: white;
-}
-
-.formacion-item {
-    position: relative;
 }
 
 .badge {
@@ -273,6 +202,14 @@ footer {
     font-weight: bold;
 }
 
+footer {
+    margin-top: 80px;
+    padding: 30px 20px;
+    font-size: 0.85rem;
+    color: #a6c8ff;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 .btn-contacto {
     position: fixed;
     bottom: 25px;
@@ -284,9 +221,90 @@ footer {
     font-weight: bold;
     text-decoration: none;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
 }
 
-.btn-contacto:hover {
-    background-color: #0055ff;
+@media (max-width: 768px) {
+    .perfil-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .proyectos-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .btn-contacto {
+        bottom: 15px;
+        right: 15px;
+        font-size: 0.85rem;
+    }
+
+    .experiencia-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.experiencia-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.experiencia-item {
+    background-color: #001a80;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.experiencia-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.experiencia-header h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.experiencia-fecha {
+    font-size: 0.85rem;
+    color: #a6c8ff;
+    font-weight: bold;
+}
+
+.experiencia-rol {
+    font-weight: bold;
+    color: #dbe4ff;
+}
+
+.experiencia-desc {
+    font-size: 0.9rem;
+    color: lightblue;
+    line-height: 1.6;
 }
